@@ -2,6 +2,7 @@ FROM python:3.10
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE $PORT
-CMD ["python", "flaskPragya.py"] --workers=4 --bind 0.0.0.0:$PORT app:app
+EXPOSE 5000
+ENTRYPOINT ["python"]
+CMD ["flaskPragya.py"] 
 
