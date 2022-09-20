@@ -3,5 +3,5 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE $PORT
-CMD CMD ["python", "flaskPragya.py"]
+CMD CMD [python, flaskPragya.py]
 
