@@ -9,4 +9,4 @@ Werkzeug==2.2.2
 WTForms==3.0.1
 PyMuPDF==1.20.2
 pymupdf-fonts==1.0.5
-gunicorm
+gunicorn
