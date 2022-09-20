@@ -1,1 +1,1 @@
-web gunicorn --pythonpath . app:app
+web: python flaskPragya.py
