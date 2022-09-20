@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SDS Info </title>
+</head>
+<style>
+.myDiv {
+  border: 3px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+<body>
+<h1 style="background-color:DodgerBlue;text-align: center"> SAFETY DATA SHEET!</h1>
+
+<div class="myDiv">
+    {% for k,v in result.items() %}
+    <h3 style="text-align: left"> {{k}} : {{v}} </h3>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>
