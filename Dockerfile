@@ -1,6 +1,7 @@
 FROM python:3.10
-COPY . /app
+COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD [ "python","flaskPragya.py" ]
+COPY . /app
+ENTRYPOINT [ "python" ]
+CMD ["flaskPragya.py" ]
